@@ -6,7 +6,6 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -15,12 +14,34 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            p {
+                margin-bottom: 0;
+            }
 
+            .question {
+                margin-top: 1.5rem;
+            }
+
+            #submit {
+                margin: 1.5rem 0 0.5rem 0;
+            }
+
+            .footer {
+                margin-bottom: 25px;
+            }
+
+            #match-img {
+                max-width: 300px;
+                max-height: 500px;
+            }
+        </style>
     </head>
 
     <body>
@@ -37,7 +58,7 @@
                     <input type="text" id="name" class="form-control">
                     Link to Photo Image:
                     <input type="text" id="photo" class="form-control">
-                    <hr class="my-4">
+                    <hr class="my-3">
 
                     <h3>Question 1</h3>
                     <p>You are not easily embarassed by others</p>
@@ -50,7 +71,7 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 2</h3>
+                    <h3 class="question">Question 2</h3>
                     <p>You are a very reliable person</p>
                     <select class="chosen-select" id="qst2">
                         <option value=""></option>
@@ -61,7 +82,7 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 3</h3>
+                    <h3 class="question">Question 3</h3>
                     <p>You prefer spontaneity to routine</p>
                     <select class="chosen-select" id="qst3">
                         <option value=""></option>
@@ -72,7 +93,7 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 4</h3>
+                    <h3 class="question">Question 4</h3>
                     <p>You like doing things in groups more than one on one</p>
                     <select class="chosen-select" id="qst4">
                         <option value=""></option>
@@ -83,7 +104,7 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 5</h3>
+                    <h3 class="question">Question 5</h3>
                     <p>You can't live without your phone</p>
                     <select class="chosen-select" id="qst5">
                         <option value=""></option>
@@ -94,7 +115,7 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 6</h3>
+                    <h3 class="question">Question 6</h3>
                     <p>The Lord of the Rings trilogy is a blessing to us all</p>
                     <select class="chosen-select" id="qst6">
                         <option value=""></option>
@@ -105,8 +126,8 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 7</h3>
-                    <p></p>
+                    <h3 class="question">Question 7</h3>
+                    <p>It's difficult for you to leave your comfort zone</p>
                     <select class="chosen-select" id="qst7">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -116,8 +137,8 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 8</h3>
-                    <p></p>
+                    <h3 class="question">Question 8</h3>
+                    <p>You love trying new things</p>
                     <select class="chosen-select" id="qst8">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -127,8 +148,8 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 9</h3>
-                    <p></p>
+                    <h3 class="question">Question 9</h3>
+                    <p>You relate better to animals than people</p>
                     <select class="chosen-select" id="qst9">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
@@ -138,8 +159,8 @@
                         <option value="5">5 (Strongly Agree)</option>
                     </select>
 
-                    <h3>Question 10</h3>
-                    <p></p>
+                    <h3 class="question">Question 10</h3>
+                    <p>You prefer being active in the outdoors to being cooped up inside</p>
                     <select class="chosen-select" id="qst10">
                         <option value=""></option>
                         <option value="1">1 (Strongly Disagree)</option>
