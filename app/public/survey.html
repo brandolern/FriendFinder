@@ -2,15 +2,13 @@
 <html lang="en">
 
     <head>
-        <title>Title</title>
+        <title>Friend Finder</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
+        <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
         </script>
@@ -20,10 +18,223 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
     </head>
 
     <body>
+        <div class="container">
 
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Survey Questions</h1>
+                    <hr class="my-4">
+
+                    <h2>About You</h2>
+
+                    Name:
+                    <input type="text" id="name" class="form-control">
+                    Link to Photo Image:
+                    <input type="text" id="photo" class="form-control">
+                    <hr class="my-4">
+
+                    <h3>Question 1</h3>
+                    <p>You are not easily embarassed by others</p>
+                    <select class="chosen-select" id="qst1">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 2</h3>
+                    <p>You are a very reliable person</p>
+                    <select class="chosen-select" id="qst2">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 3</h3>
+                    <p>You prefer spontaneity to routine</p>
+                    <select class="chosen-select" id="qst3">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 4</h3>
+                    <p>You like doing things in groups more than one on one</p>
+                    <select class="chosen-select" id="qst4">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 5</h3>
+                    <p>You can't live without your phone</p>
+                    <select class="chosen-select" id="qst5">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 6</h3>
+                    <p>The Lord of the Rings trilogy is a blessing to us all</p>
+                    <select class="chosen-select" id="qst6">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 7</h3>
+                    <p></p>
+                    <select class="chosen-select" id="qst7">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 8</h3>
+                    <p></p>
+                    <select class="chosen-select" id="qst8">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 9</h3>
+                    <p></p>
+                    <select class="chosen-select" id="qst9">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <h3>Question 10</h3>
+                    <p></p>
+                    <select class="chosen-select" id="qst10">
+                        <option value=""></option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+
+                    <button type="submit" id="submit" class="btn btn-primary btn-md btn-block"
+                        style="width: 25%;">Submit</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <p><a href="/api/friends">API Friends List </a> |
+                        <a href="https://github.com/brandolern/FriendFinder">GitHub Repo</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img"
+                            src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var config = {
+                ".chosen-select": {},
+                ".chosen-select-deselect": {
+                    allow_single_deselect: true
+                },
+                ".chosen-select-no-single": {
+                    disable_search_threshold: 10
+                },
+                ".chosen-select-no-results": {
+                    no_results_text: "Oops, nothing found!"
+                },
+                ".chosen-select-width": {
+                    width: "95%"
+                }
+            };
+
+            for (var selector in config) {
+                $(selector).chosen(config[selector]);
+            }
+
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+                var friendData = {
+                    name: $("#name").val().trim(),
+                    picture: $("#photo").val().trim(),
+                    scores: [
+                        $("#qst1").val(),
+                        $("#qst2").val(),
+                        $("#qst3").val(),
+                        $("#qst4").val(),
+                        $("#qst5").val(),
+                        $("#qst6").val(),
+                        $("#qst7").val(),
+                        $("#qst8").val(),
+                        $("#qst9").val(),
+                        $("#qst10").val()
+                    ]
+                };
+
+                $.post("/api/friends", friendData, function (data) {
+                    console.log(data);
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.picture);
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+                });
+
+            });
+        </script>
 
     </body>
 
